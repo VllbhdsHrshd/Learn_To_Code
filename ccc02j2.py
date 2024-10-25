@@ -1,0 +1,17 @@
+# AmeriCanadian...
+vowel = 'aeiouAEIOUyY'
+done = False
+
+
+while not done:
+
+    word = input()
+    if word == 'quit!':
+        done = True
+    elif len(word) > 4 and not(word[-3] in vowel) and word[-2:]=='or':
+        print(word[:-2]+'our')
+    else:
+        print(word)
+
+
+
